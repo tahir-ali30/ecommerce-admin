@@ -51,7 +51,8 @@ function CategoriesPage({swal}) {
         const { name, parent, properties } = category
         setCategoryName(name)
         setParentCategory(parent?._id ?? '')
-        setProperties(properties)
+        // setProperties(properties)
+        setProperties([...properties,...parent.properties])
     }
 
     async function deleteCategory(category) {

@@ -74,11 +74,11 @@ export default function ProductForm({
     if (categories.length > 0 && productDetails.category) {
         let catInfo = categories.find(({ _id }) => _id === productDetails.category);
         propertiesToFill.push(...catInfo.properties);
-        while (catInfo?.parent?._id) {
-            const parentCat = categories.find(({ _id }) => _id === catInfo?.parent?._id);
-            propertiesToFill.push(...parentCat.properties);
-            catInfo = parentCat;
-        }
+        // while (catInfo?.parent?._id) {
+        //     const parentCat = categories.find(({ _id }) => _id === catInfo?.parent?._id);
+        //     propertiesToFill.push(...parentCat.properties);
+        //     catInfo = parentCat;
+        // }
     }
 
     function setProductProp(name, value) {

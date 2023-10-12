@@ -1,4 +1,3 @@
-import Layout from "@/app/components/Layout";
 import ProductForm from "@/app/components/ProductForm";
 
 export default function NewProduct() {

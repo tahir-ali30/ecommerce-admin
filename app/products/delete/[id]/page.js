@@ -1,6 +1,5 @@
 "use client"
 
-import Layout from "@/app/components/Layout";
 import axios from "axios";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
